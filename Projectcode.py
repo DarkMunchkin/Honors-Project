@@ -20,10 +20,18 @@ def truth_booth(list): #random pair list
         try:
             x,y = input("Enter two contestants: ").split()
             break
+            test_list.append((x, y))
         except ValueError:
             print("\nThis is not a number. Try again...")
             print()
-        test_list.append((x, y))
+        '''while True:
+            C1 = print("Enter contestant 1: ")
+            C2 = print("Enter contestant 2: ")
+            test_list.append( (C1, C2) ) # append a 2-tuple to your list, rather than calling `append` with two arguments
+            if user == 'N':
+                break
+            if user != 'N' and 'Y':
+                print("Invalid entry, please re-enter!\nContinue? (y) or (n)")'''
     return test_list
 def bad_list(xlist, ylist): #truth booth list, perfect list
     match = []
@@ -41,15 +49,15 @@ def per_num_pairs(x, y): #random pair list, perfect pair list
 for x in range(len(Contestants)//2):
     weeks = 0
     perfect_pairs = pairs(Contestants)
+    rand_pairs = []
+    rand_pairs = pairs(Contestants)
+    print(per_num_pairs(rand_pairs, perfect_pairs))
+    d_list = bad_list(truth_booth(rand_pairs),perfect_pairs)
+    rand_pairs = d_list
+    weeks +=1
     if weeks == len(Contestants)//2:
         print('Game Over, You Lose!!!')
     elif len(rand_pairs) == 0:
         print('Game Over, You Win!!!')
-    else:
-        rand_pairs = pairs(Contestants)
-        print(per_num_pairs(rand_pairs, perfect_pairs))
-        d_list = bad_list(truth_booth(rand_pairs),perfect_pairs)
-        rand_pairs = d_list
-        weeks +=1
 # Algorithm 2
 
