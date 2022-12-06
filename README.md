@@ -8,3 +8,5 @@ Algorithm 3: This Algorithm when run, averages around 55 weeks more often and on
 My original plan was to create a GUI however I was unable to make a decorative sophisticated one. It uses another algorithm I created and the GUI works as intended just not enough information to simulate the gameplay. Although it isn't my main project I put in alot of effort into learning how to use the GUI so I left it here in a separate folder if you want to take a look.
 
 Each Algorithm's times are so fast, its almost near instantaneous. It fluctuates between, according to the reading, 0.0 - 1.19 * 10^-6. 
+
+Thank You For Looking Into My Project!!!
