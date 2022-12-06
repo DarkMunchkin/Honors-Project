@@ -5,4 +5,6 @@ Algorithm 2: This Algorithm when run, averages around 68 weeks more often but al
 
 Algorithm 3: This Algorithm when run, averages around 55 weeks more often and only flutuates between 55 - 59 weeks on average. Algorithm 3 is the same as algorithm 2 but with a twist, every time the week counter reaches a multiple of 25, the first pair from the perfect pairs dictionary in other words the answer key and deletes all the pairs that contains those contestants. 
 
-My original plan was to create a GUI however I was unable to make a decorative sophisticated one. It uses another algorithm I created and the GUI works as intended just not enough information to simulate the gameplay. Although it isn't my main project I put in alot of effort into learning how to use the GUI so I left it here in a separate folder if you want to take a look.  
+My original plan was to create a GUI however I was unable to make a decorative sophisticated one. It uses another algorithm I created and the GUI works as intended just not enough information to simulate the gameplay. Although it isn't my main project I put in alot of effort into learning how to use the GUI so I left it here in a separate folder if you want to take a look.
+
+Each Algorithm's times are so fast, its almost near instantaneous. It fluctuates between, according to the reading, 0.0 - 1.19 * 10^-6. 
