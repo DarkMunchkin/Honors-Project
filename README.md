@@ -9,4 +9,6 @@ My original plan was to create a GUI however I was unable to make a decorative s
 
 Each Algorithm's times are so fast, its almost near instantaneous. It fluctuates between, according to the reading, 0.0 - 1.19 * 10^-6. 
 
+My Blank Diagram is the first flowchart I created, the algorithms pdfs are my actual project's flowcharts.
+
 Thank You For Looking Into My Project!!!
