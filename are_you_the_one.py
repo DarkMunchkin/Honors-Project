@@ -181,26 +181,54 @@ class GameSimulator:
 
 if __name__ == "__main__":
 
-    n_times = 5
+    n_times = 100
     weeks_random = 0
     weeks_all = 0
     weeks_pairs = 0
+    median_weeks_random = []
+    median_weeks_all = []
+    median_weeks_pairs = []
     for i in range(n_times):
         # Compare all three algorithms using average number of weeks
         simulator = GameSimulator()
         weeks_random += simulator.simulate_game_random()
         weeks_all +=  simulator.simulate_game_try_all_pairs()
         weeks_pairs += simulator.simulate_game_pairs()
+        median_weeks_random.append(simulator.simulate_game_random())
+        median_weeks_all.append(simulator.simulate_game_try_all_pairs())
+        median_weeks_pairs.append(simulator.simulate_game_pairs())
+        
+        
 
     avg_weeks_random = weeks_random/n_times
     avg_weeks_all = weeks_all/n_times
     avg_weeks_pairs = weeks_pairs/n_times 
+    median_random = statistics.median(median_weeks_random)
+    median_all = statistics.median(median_weeks_all)
+    median_pairs = statistics.median(median_weeks_pairs)
+
+    std_dv_random = statistics.stdev(median_weeks_random)
+    std_dv_all = statistics.stdev(median_weeks_all)
+    std_dv_pairs = statistics.stdev(median_weeks_pairs)
     print(f'Average Weeks for Random Algorithm :', (avg_weeks_random))
     print(f'Average Weeks for Try All Algorithm:', (avg_weeks_all))
     print(f'Average Weeks for Pairs Algorithm:', (avg_weeks_pairs))
     print(f"Time for Random Algorithm: {simulator.end1 - simulator.start1} seconds")
     print(f"Time for Try All Algorithm: {simulator.end2 - simulator.start2} seconds")
     print(f"Time for Pairs Algorithm: {simulator.end3 - simulator.start3} seconds")
+    print(f'Median Weeks for Random Algorithm :', (avg_weeks_random))
+    print(f'Median Weeks for Try All Algorithm:', (avg_weeks_all))
+    print(f'Median Weeks for Pairs Algorithm:', (avg_weeks_pairs))
+    print(f'Standard Deviation of Weeks for Random Algorithm :', (avg_weeks_random))
+    print(f'Standard Deviation of Weeks for Try All Algorithm:', (avg_weeks_all))
+    print(f'Standard Deviation of Weeks for Pairs Algorithm:', (avg_weeks_pairs))
+    median_random = statistics.median(median_weeks_random)
+    median_all = statistics.median(median_weeks_all)
+    median_pairs = statistics.median(median_weeks_pairs)
+
+    std_dv_random = statistics.stdev(median_weeks_random)
+    std_dv_all = statistics.stdev(median_weeks_all)
+    std_dv_pairs = statistics.stdev(median_weeks_pairs)
 
 
 
