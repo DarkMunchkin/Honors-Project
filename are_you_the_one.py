@@ -1,5 +1,6 @@
 import random
 import time
+import statistics
 class GameSimulator:
 
     def __init__(self):
