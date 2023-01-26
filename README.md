@@ -1,4 +1,4 @@
-# Honors-Project
+# Honors-Project By Johan Chittissery
 Algorithm 1: This Algorithm when run, averages around 65 weeks more often. However it isn't steady and usually fluctuates around 45-75 weeks on average. Algorithm 1 focuses on taking one random pair at a time from a list of contestants and then using a truthbooth method to figure out if it matches or not. If it matches it will be sent to an empty matches list, if not then does nothing about it. It will continue until it gets all the matches. 
 
 Algorithm 2: This Algorithm when run, averages around 68 weeks more often but although its steadier than algorithm 1 it does flutuate between 65 - 75 weeks on average. Algorithm 2 focuses on creating all possible pairs from the 16 contestants in a list and then pops each pair from the list. If it matches it will remove the matched contestants from every pair in the list. The goal here is to find out how many weeks it needs for all possible pairs to reach 0. 
